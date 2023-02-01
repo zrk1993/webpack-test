@@ -19,6 +19,7 @@ module.exports = class MYPlugin {
         'MyPlugin',
         (module) => {
           module.useSourceMap = true;
+          console.log('module')
           console.log(module.rawRequest)
           console.log(module._source)
         }
@@ -35,7 +36,7 @@ module.exports = class MYPlugin {
     })
     compiler.hooks.compile.tap('done', (stats) => {
       console.log('done')
-      console.log(stats)
+      // console.log(stats)
     })
   }
 }
