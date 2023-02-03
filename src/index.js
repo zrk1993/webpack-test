@@ -12,3 +12,11 @@ console.log(j)
 
 import dayjs from 'dayjs'
 console.log(dayjs().unix())
+
+import _ from 'lodash';
+
+console.log(_.join(['1', '2']))
+
+// import Print from './print';
+
+// Print('1')
