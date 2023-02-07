@@ -6,7 +6,10 @@ const CompressionPlugin = require('compression-webpack-plugin');//引入gzip压�
 
 
 module.exports = (env) => ({
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    main: './src/main.js'
+  },
   mode: 'development',
   output: {
     clean: true,
